@@ -8,7 +8,7 @@ characters (no numbers and symbols) and it should end with capital A else return
 function capitalA(s){
     let regex =/[a-z]/gi;
     let regex2=/(A)$/g;
-   /* let regex2=/*/
+   
    let rest1=regex.test(s)
    let rest2=regex2.test(s)
    if(rest1==true&&rest2==true){
@@ -64,8 +64,6 @@ function imagesSearcher(text){
         }
     }
     
-   
-    // Add your logic.
     return arr
 }
 
