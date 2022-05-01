@@ -37,8 +37,7 @@ function division(number, dividedBy){
         }
      
       
-        let num1 = 13, num2 = 2;
-        console.log(division(0,10));  
+        
     
 
 
