@@ -44,23 +44,26 @@ required extention are jpg, jpeg and png.
 */
 
 function imagesSearcher(text){
-    let regex =/(\w+.jpg)(\b)/gi;
-    let regex1 =/(\w+.jpeg)(\b)/gi;
-    let regex2 =/(\w+.png)(\b)/gi;
-    let arr = [];
-    let re=text.match(regex)
-    let r=re[0]
-    arr.push(r)
-    let re1=text.match(regex1)
-    let r1=re1[0]
-    arr.push(r1)
-    let re2=text.match(regex2) 
-    let r2=re2[0] 
-    arr.push(r2)
-    arr.pop()
+    let arr=[]
+    let regex =/(.jpg)$/g;
+    let regex1 =/(.jpeg)$/g;
+    let regex2 =/(.png)$/g;
+    let textArr=text.split(" ")
+    console.log(textArr)
+    console.log(textArr[2])
+    for (let i =0 ;i<textArr.length ;i++){
+
+        let item =textArr[i]
+        console.log(textArr[i])
+        console.log(item)
+        if(true==regex.test(item)||true==regex1.test(item)||true==regex2.test(item)){
+            arr.push(item)
+
+
+
+        }
+    }
     
-   
-    // Add your logic.
     return arr
 }
 
