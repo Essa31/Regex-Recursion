@@ -1,22 +1,44 @@
 /* Write a function to do the division operation without using the built-in division*/
 
 function division(number, dividedBy){
-    let cont=0
-  if(number==0){
-      return 0
-  }
-  if(dividedBy==0){
-    return 0
-  }
-  if(number>=dividedBy){
-      number=number-dividedBy
-      cont++
-      division(number, dividedBy)
-
-  }
-return cont
-}
-    
+    if (number == 0)
+                return 0;
+            if (dividedBy == 0)
+                return 0;;
+            let negResult = false;
+     
+            // Handling negative numbers
+            if (dividedBy < 0)
+            {
+                number = -number;
+                if (dividedBy < 0)
+                dividedBy = -dividedBy;
+                else
+                    negResult = true;
+            }
+            else if (dividedBy < 0)
+            {
+                dividedBy = -dividedBy;
+                negResult = true;
+            }
+     
+        
+            let quotient = 0;
+            while (number >= dividedBy)
+            {
+                number = number - dividedBy;
+                quotient++;
+            }
+     
+          
+            if (negResult)
+                quotient = -quotient;
+            return quotient;
+        }
+     
+      
+        let num1 = 13, num2 = 2;
+        console.log(division(0,10));  
     
 
 
