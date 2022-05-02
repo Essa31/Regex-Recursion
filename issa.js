@@ -1,4 +1,5 @@
 
+
 function ioEmail(email){
     let regex1=/(io)$/g;
     let rest1=regex1.test(email)
@@ -23,3 +24,15 @@ function ioEmail(email){
 }
 }
 console.log( ioEmail("example@example.gmail"))
+=======
+function pow(x,n){
+    if(n==0){return 1}
+    else if (n%2 ==0){
+        return pow(x,(n/2))*pow(x,(n/2))
+    }else{
+         return x*pow(x,(n/2))*pow(x,(n/2))
+    }
+    
+}
+console.log(pow(10,2)) 
+
