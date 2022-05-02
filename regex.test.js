@@ -26,7 +26,7 @@ function capitalA(s){
 which end with io (example@example.io) */
 
 function ioEmail(email){
-    let regex1=/(io)$/g;
+    let regex1=/(.io)$/g;
     let rest1=regex1.test(email)
     
     
