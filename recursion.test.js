@@ -53,6 +53,7 @@ function pow(x,n){
         return pow(x,(n/2))*pow(x,(n/2))
     }else{
          return x*pow(x,(n/2))*pow(x,(n/2))
+         //jhvugcgdxdtrcu
     }
     
 }
