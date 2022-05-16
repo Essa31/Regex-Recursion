@@ -1,27 +1,33 @@
 
 
 function ioEmail(email){
-    let regex1=/(io)$/g;
+    let regex1=/(.io)$/g;
     let rest1=regex1.test(email)
+
     
     
     if(rest1==true){
         let arremail1=email.split(".")
-        console.log(arremail1)
+        console.log("gfutfg",arremail1)
         let arremail2=email.split("@")
-        console.log(arremail2)
-        if(arremail1.length==2 && arremail2.length==2){
+        console.log("esrg",arremail2)
+       if((arremail1.length ==2) && (arremail2.length==2)){
         return true;
     
         }else{
          return false 
 
         }
-       /*
-       }*/
+      
+       }
     // Add your logic.
-   
+    return false
 }
+<<<<<<< HEAD
+
+
+console.log(ioEmail("ex@ample@example.io"))
+=======
 }
 console.log( ioEmail("example@example.gmail"))
 =======
@@ -36,3 +42,4 @@ function pow(x,n){
 }
 console.log(pow(10,2)) 
 
+>>>>>>> b8d0a451a40e9a5ad012e38c69d4372a5a112582
