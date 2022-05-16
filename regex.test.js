@@ -32,9 +32,9 @@ function ioEmail(email){
     
     if(rest1==true){
         let arremail1=email.split(".")
-        console.log(arremail1)
+     
         let arremail2=email.split("@")
-        console.log(arremail2)
+      
         if(arremail1.length==2 && arremail2.length==2){
         return true;
     
@@ -42,12 +42,14 @@ function ioEmail(email){
          return false 
 
         }
-       /*
-       }*/
+       
+       }
+       return false
     // Add your logic.
    
 }
-}
+
+
 
 /* You have a text that contain image names with their extention you need to write a function to 
 find all images in that text and return their names and extention in an array 
