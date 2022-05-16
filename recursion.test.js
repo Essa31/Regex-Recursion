@@ -37,8 +37,7 @@ function division(number, dividedBy){
         }
      
       
-        let num1 = 13, num2 = 2;
-        console.log(division(0,10));  
+        
     
 
 
@@ -54,6 +53,7 @@ function pow(x,n){
         return pow(x,(n/2))*pow(x,(n/2))
     }else{
          return x*pow(x,(n/2))*pow(x,(n/2))
+         //jhvugcgdxdtrcu
     }
     
 }
